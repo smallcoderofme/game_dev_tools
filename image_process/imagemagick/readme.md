@@ -1,19 +1,19 @@
-# Version: ImageMagick 7.0.9-14 Q16 x64 2020-01-05 http://www.imagemagick.org *
+# Version: ImageMagick 7.0.9-14 Q16 x64 2020-01-05 http://www.imagemagick.org *<br />
 
-* image compress and resize *
-** magick convert -resize "4096x2048" -strip -quality 75% input.png output.png **
-* format convert*
-** magick convert rose.jpg rose.png**
+* image compress and resize *<br />
+** magick convert -resize "4096x2048" -strip -quality 75% input.png output.png **<br />
+* format convert*<br />
+** magick convert rose.jpg rose.png**<br />
 
-* foramt convert and resize*
-** magick convert rose.jpg -resize 50% rose.png**
+* foramt convert and resize*<br />
+** magick convert rose.jpg -resize 50% rose.png**<br />
 
-* generate gif animate*
-** magick *.jpg images.gif **
+* generate gif animate*<br />
+** magick *.jpg images.gif **<br />
 
-* generate gif animate *
-** magick 'images.gif[0]' image.png **
-** magick 'images.gif[0-3]' images.mng **
+* generate gif animate *<br />
+** magick 'images.gif[0]' image.png **<br />
+** magick 'images.gif[0-3]' images.mng **<br />
 
-* selecting image region *
-** magick convert input.jpg[wxh+offsetX+offsetY] output.jpg **
+* selecting image region *<br />
+** magick convert input.jpg[wxh+offsetX+offsetY] output.jpg **<br />
