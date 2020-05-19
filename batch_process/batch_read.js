@@ -75,16 +75,12 @@ function get_files(file_path){
  //    file_list.forEach((file) => {
  //    	config.push(file.replace('inputs\\', '../outputs/').replace('.jpg','.dzi'));
  //    });
- //    fs.writeFile('config.json', JSON.stringify(config), (err) => {
-	// 	if (err) throw err;
-	// 	console.log('config was saved');
-	// });
  
-    console.log('总共需要裁切的图片数:', file_list.length);
-
-    // if(file_list.length){
-	   //  run(file_list.shift());
-    // }
+    console.log('总共获取文件数为:', file_list.length);
+    fs.writeFile('output.txt', JSON.stringify(file_list), (err) => {
+		if (err) throw err;
+		console.log('output.txt was saved');
+	});
 }
 
-get_files("big_comp_input");
+get_files("input");
