@@ -17,3 +17,17 @@ magick *.jpg images.gif <br />
 
 * selecting image region *<br />
  magick convert input.jpg[w x h + offsetX + offsetY] output.jpg <br />
+
+
+myimages.txt  <br />
+	frame001.jpg<br />
+	frame002.jpg<br />
+	frame003.jpg<br />
+
+magick @myimages.txt mymovie.gif<br />
+magick image-%d.jpg[1-5]  <br />
+image-1.jpg
+image-2.jpg
+image-3.jpg
+image-4.jpg
+image-5.jpg
