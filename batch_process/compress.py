@@ -29,7 +29,7 @@ def buildEncode(file):
 	with open(fileName,"wt") as outFile:
 		outFile.write(command)
 		outFile.close()
-	completeProcess = subprocess.run(["magick"], stdout=subprocess.PIPE, shell=True)
+	completeProcess = subprocess.run([fileName], stdout=subprocess.PIPE, shell=True)
 	if completeProcess.returncode is 0:
 		print("----------------- over!")
 		# if len(file_list)>0:
