@@ -1,7 +1,7 @@
 # Version: ImageMagick 7.0.9-14 Q16 x64 2020-01-05 http://www.imagemagick.org *<br />
 
 * image compress and resize <br />
-magick convert -resize "4096x2048" -strip -quality 75% input.png output.png<br />
+magick convert -resize "4096x2048" -strip -quality 75% input.png output.png <br />
 * format convert*<br />
 magick convert rose.jpg rose.png<br />
 
