@@ -5,7 +5,7 @@ from PIL import Image
 file_list = []
 
 file_path = "./"
-image_format = ".jpg"
+image_format = ".png"
 quality = "50%"
 
 def init(file_dir):
@@ -31,9 +31,11 @@ def buildEncode(file):
 		outFile.close()
 	completeProcess = subprocess.run([fileName], stdout=subprocess.PIPE, shell=True)
 	if completeProcess.returncode is 0:
-		print("----------------- over!")
-		# if len(file_list)>0:
-		# 	buildEncode(file_list.pop())
+		# print("----------------- over!")
+		if len(file_list)>0:
+			buildEncode(file_list.pop())
+		else:
+			os.remove(fileName)
 		# else:
 		# 	print("tasks complete！")
 	pass
