@@ -1,7 +1,9 @@
+# https://github.com/kornelski/pngquant
+# https://github.com/meowtec/Imagine
+
 import subprocess
 import os
-from PIL import Image
-# im = Image.open("hopper.ppm"); im.size
+# from PIL import Image                   
 file_list = []
 
 file_path = "./"
@@ -22,8 +24,9 @@ def init(file_dir):
 	return fileList
 
 def buildEncode(file):
-	img = Image.open(file); 
-	command = "magick convert -resize {}x{} -strip -quality {} {} {}".format(img.size[0], img.size[1], quality, file, file)
+	# img = Image.open(file); 
+	# command = "magick convert -resize {}x{} -depth 8 -strip -quality {} {} {}".format(img.size[0], img.size[1], quality, file, file)
+	command = "pngquant --quality=50-60 {}".format(file)
 	print("command:", command)
 	fileName = "encode.bat"
 	with open(fileName,"wt") as outFile:

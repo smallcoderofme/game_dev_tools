@@ -1,1 +1,0 @@
-["input\\vscroll$down.png","input\\vscroll$up.png","input\\vscroll.png","input\\vslider$bar.png","input\\vslider.png"]
