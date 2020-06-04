@@ -31,3 +31,6 @@ image-2.jpg
 image-3.jpg
 image-4.jpg
 image-5.jpg
+
+
+magick convert icon.png -define icon:auto-resize=256,128,64,48,32,16 icon.ico
